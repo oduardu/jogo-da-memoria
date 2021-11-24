@@ -1,0 +1,23 @@
+h1,h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    color: cornflowerblue;
+}
+
+h3 {
+    color: indigo;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+img{
+    margin: 2px;
+}
