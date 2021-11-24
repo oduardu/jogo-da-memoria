@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if(primeira == segunda) {
                 cartas[primeira].setAttribute('src', 'cartas/blank.png')
                 cartas[primeira].setAttribute('src', 'cartas/blank.png')
-              alert('You have clicked the same image!')
+              alert('Você clicou na mesma imagem!!')
             }
             else if (cartasEscolhidas[0] === cartasEscolhidas[1]) {
               cartas[primeira].setAttribute('src', 'cartas/white.png')
