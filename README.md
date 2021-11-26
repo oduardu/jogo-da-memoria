@@ -6,5 +6,5 @@ Este projeto se trata de um jogo da memória desenvolvido apenas com HTML, CSS e
 
 ## Alunos
 
-Foi desenvolvido pelos alunos Eduardo Pazzini Zancanaro, Filipe Medeiros de Almeida e Leonardo Moreschi.
+O projeto foi desenvolvido pelos alunos Eduardo Pazzini Zancanaro, Filipe Medeiros de Almeida e Leonardo Moreschi.
 
