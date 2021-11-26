@@ -16,6 +16,7 @@ h3 {
     width: 400px;
     height: 300px;
     margin: auto;
+    justify-content: center;
 }
 
 img{
