@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let idCartasEscolhidas = []
     let cartasCertas = []
 
-
     const arrayCartas = [
         {
           name: 'batatfrita',
