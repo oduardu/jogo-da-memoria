@@ -10,51 +10,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const arrayCartas = [
         {
           name: 'batatfrita',
-          img: 'cartas/fries.png'
+          img: 'images/fries.png'
         },
         {
           name: 'hamburguer',
-          img: 'cartas/cheeseburger.png'
+          img: 'images/cheeseburger.png'
         },
         {
           name: 'picole',
-          img: 'cartas/ice-cream.png'
+          img: 'images/ice-cream.png'
         },
         {
           name: 'pizza',
-          img: 'cartas/pizza.png'
+          img: 'images/pizza.png'
         },
         {
           name: 'milkshake',
-          img: 'cartas/milkshake.png'
+          img: 'images/milkshake.png'
         },
         {
           name: 'cachorroquente',
-          img: 'cartas/hotdog.png'
+          img: 'images/hotdog.png'
         },
         {
             name: 'batatfrita',
-            img: 'cartas/fries.png'
+            img: 'images/fries.png'
           },
           {
             name: 'hamburguer',
-            img: 'cartas/cheeseburger.png'
+            img: 'images/cheeseburger.png'
           },
           {
             name: 'picole',
-            img: 'cartas/ice-cream.png'
+            img: 'images/ice-cream.png'
           },
           {
             name: 'pizza',
-            img: 'cartas/pizza.png'
+            img: 'images/pizza.png'
           },
           {
             name: 'milkshake',
-            img: 'cartas/milkshake.png'
+            img: 'images/milkshake.png'
           },
           {
             name: 'cachorroquente',
-            img: 'cartas/hotdog.png'
+            img: 'images/hotdog.png'
           }
       ]
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       function criarJogo() {
           for(let x = 0; x < arrayCartas.length; x++){
               const carta = document.createElement('img')
-              carta.setAttribute('src', 'cartas/blank.png')
+              carta.setAttribute('src', 'images/blank.png')
               carta.setAttribute('data-id', x)
               carta.addEventListener('click', girarCarta)
               grid.appendChild(carta)
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
           cartasEscolhidas.push(arrayCartas[idCarta].name)
           idCartasEscolhidas.push(idCarta)
           this.setAttribute('src', arrayCartas[idCarta].img)
-          if (cartasEscolhidas.length === 2){
-              setTimeout(verificador, 500)
+          if (cartasEscolhidas.length === 2){ 
+              setTimeout(verificador, 500) 
           }
         }
 
@@ -86,19 +86,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
             const segunda = idCartasEscolhidas[1]
             
             if(primeira == segunda) {
-                cartas[primeira].setAttribute('src', 'cartas/blank.png')
-                cartas[primeira].setAttribute('src', 'cartas/blank.png')
+                cartas[primeira].setAttribute('src', 'images/blank.png')
+                cartas[primeira].setAttribute('src', 'images/blank.png')
               alert('Você clicou na mesma imagem!!')
             }
             else if (cartasEscolhidas[0] === cartasEscolhidas[1]) {
-              cartas[primeira].setAttribute('src', 'cartas/white.png')
-              cartas[segunda].setAttribute('src', 'cartas/white.png')
+              cartas[primeira].setAttribute('src', 'images/white.png')
+              cartas[segunda].setAttribute('src', 'images/white.png')
               cartas[primeira].removeEventListener('click', girarCarta)
               cartas[segunda].removeEventListener('click', girarCarta)
               cartasCertas.push(cartasEscolhidas)
             } else {
-              cartas[primeira].setAttribute('src', 'cartas/blank.png')
-              cartas[segunda].setAttribute('src', 'cartas/blank.png')
+              cartas[primeira].setAttribute('src', 'images/blank.png')
+              cartas[segunda].setAttribute('src', 'images/blank.png')
               alert('Opss! Tente novamente!')
             }
             cartasEscolhidas = []
